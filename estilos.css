@@ -1,0 +1,36 @@
+.body {
+	background-color:#C30;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-style:normal;
+	color:#003;/*Color de fuente de letra*/
+}
+
+.p{
+	color:#003;
+	font-size:12px;
+	font-weight:normal;
+}
+
+.fieldset{
+	font-size:14px;
+	font-weight:bold;
+	width:600px;
+}
+
+table {
+   width: 50%;
+   border: 2px solid #003;
+   background-color:#F96;
+   border-collapse: collapse;
+}
+th, td {
+   width: 25%;
+   text-align: left;
+   vertical-align: top;
+   border: 2px solid #003;
+   border-collapse: collapse;
+}
+
+
+

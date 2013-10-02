@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Problema</title>
+<link rel="StyleSheet" href="estilos.css" type="text/css" />
+<script type="text/javascript" src="../jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="funciones.js"></script>
+</head>
+
+<body>
+	 
+      <fieldset>
+      	<legend>Seleccione valores para los atributos del Formulario:</legend>
+        <p>Método de envío:<select name="metodosenvio" id="metodosenvio" title="Metodo de envío" style="width:120px">
+        	<option value="vacio">(--vacío--)</option>
+        	<option value="post">Método POST</option>
+            <option value="get">Método GET</option>
+        </select>
+        </p>
+        <p>Donde se enviará el formulario:<input name="pagdestino" id="pagdestino" type="text" width="200px"/></p>
+        <p>Donde se cargará el formulario:<select name="metodoscarga" id="metodoscarga" title="Metodo de carga" style="width:220px">
+        	<option value="vacio">(--vacío--)</option>
+        	<option value="self">Misma página(SELF)</option>
+            <option value="blank">En nueva ventana(BLANK)</option>
+            <option value="parent">En la ventana padre(PARENT)</option>
+            <option value="top">En la última ventana padre(TOP)</option>
+        </select>
+        </p>
+      </fieldset>
+      
+      <p><input name="enviar" id="enviar" type="checkbox"  />Añadir botón SUBMIT</p>
+      <p><input name="borrar" id="borrar" type="checkbox"  />Añadir botón RESET</p>
+      
+      <table id="tablaElementos">
+        <tr>
+            <th scope="col">Tipo de dato</th>
+            <th scope="col">Nombre del campo</th>
+            <th scope="col">Texto que encabeza el campo</th>
+            <th scope="col">Valor inicial del campo</th>
+        </tr>
+        <tr>
+      </table><br />
+      
+      <input id="addElemento" type="button" value="Nuevo elemento"/>
+      <br />
+
+      
+      <p>Bajo este rotulo verá el formulario generado por usted...<input id="crearFormulario" type="button" value="Crear formulario"/></p>
+      
+      <div id="resultados"></div>
+   
+	
+</body>
+</html>
